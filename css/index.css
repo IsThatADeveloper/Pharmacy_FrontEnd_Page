@@ -1,0 +1,194 @@
+/* Banner Section */
+.banner {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1e1e1e;
+    margin-top: 60px;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Input Section */
+
+.input-bar {
+    padding-left: 25%;
+    padding-bottom: 200px;
+    display: block;
+}
+
+.drugs {
+    width: 400px;
+    height: 90px;
+    border: 2px solid var(--site-color-01);
+    border-radius: 12px;
+    font-size: 2.6rem;
+    padding: 10px 10px 10px 12px;
+    color: white;
+    z-index: 30;
+    position: absolute;
+    font-style: italic;
+}
+
+.search-img {
+    background-image: url(../img/search.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 30px;
+    height: 30px;
+    z-index: 50;
+    position: absolute;
+}
+
+
+/* News Section */
+
+.news-area {
+    width: 100%;
+    padding: 60px 0;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.news-area p {
+    color: #1e1e1e;
+    text-align: center;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+.news {
+    width: 20rem;
+    height: 20rem;
+    border: 2px solid var(--site-color-01);
+    text-align: center;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news h2 {
+    font-size: 2.0rem;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100;
+    padding: 5px
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.3;
+    transition: all ease-in-out 200ms;
+}
+
+.news:nth-child(2) {
+    background-image: url(../img/news/pharma.jpg);
+}
+
+.news:nth-child(3) {
+    background-image: url(../img/news/medical.jpg);
+}
+
+.news:nth-child(4) {
+    background-image: url(../img/news/tech.jpg);
+}
+
+.news:hover .dark-overlay {
+    opacity: 0;
+    border: var(--site-color-01-hover);
+}
+
+/*Map Section*/
+
+.main-map {
+    width: 100%;
+    height: 300px;
+    background-color: #1d1d1d;
+    text-transform: uppercase;
+}
+
+.main-map p {
+    font-weight: 300;
+    font-size: 2.6rem;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/*Mobile Version*/
+
+@media only screen and (max-width: 600px) {  
+    /* Banner Section */
+    .banner {
+        background-image: url(../img/phonebackground.png);
+    }
+
+    /* Input Section */
+
+    .input-bar {
+        padding-top: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drugs {
+        width: 220px;
+        height: 60px;
+        font-size: 1.65rem;
+        right: 22.5vw;
+    }
+
+    .search-img {
+        margin-bottom: 3.5vh;
+        margin-left: 22vw;
+        width: 15px;
+        height: 15px;
+    }
+
+    /* News Section */
+
+    .news-area p {
+        padding-bottom: 20px;
+        font-size: 2.4rem;
+    }
+
+    .news h2 {
+        font-size: 1.6rem;
+    }
+
+    /*Map Section*/
+
+    .main-map {
+        height: 200px;
+    }
+
+    .main-map p {
+        font-size: 2.4rem;
+        padding-top: 40px;
+    }
+}

@@ -1,5 +1,4 @@
 # MediplexPharmacyRemake
 
-Website Link.
+[website link](https://isthatadeveloper.github.io/MediplexPharmacyRemake/)
 
-https://isthatadeveloper.github.io/MediplexPharmacyRemake/

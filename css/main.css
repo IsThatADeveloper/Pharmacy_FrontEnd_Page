@@ -232,7 +232,8 @@ a {
     /* Footer Section */
     
     .main-footer {
-        padding: 30px 0 200px;
+        padding: 30px 0 0 0;
+        padding-bottom: 22vh;
     }
     
     .footer-sitemap a {

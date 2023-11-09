@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/drug_info.js"></script>
+    <script src="https://kit.fontawesome.com/de329c76bd.js" crossorigin="anonymous"></script>
+    <script src="js/autocomplete.js"></script>
+
 </head>
 <body>
 
@@ -49,11 +54,12 @@
     <main class="banner">
 
        <div class="input-bar">
-             <!-- <input class="drugs" type="text" placeholder="Search For Medications">
-            <div class="search-img"></div> -->
+             <!-- <input class="drugs" type="text" placeholder="Search For Medications"> -->
 
             <label for="rxterms"></label>
-	        <input class="drugs" type="text" id="rxterms" placeholder="Search Medications Here" style="font-style: italic; border-radius: 12px 0 0 12px; height: 80px; font-size: 16px; padding: 10px; margin: 0; width: 60%; margin-left: 10px; transform: translateX(5px);">
+	    <label for="drug_strengths"></label>
+	    <input class="drugs" type="text" id="rxterms" placeholder="Search Medications Here">
+	    <div class="search-img"></div>
        </div>
 
     </main>
@@ -142,13 +148,6 @@
       }
     }
   });
-
-
-  function toggleDropdown(event) {
-  	event.preventDefault();
-  	var dropdown = document.getElementById("dropdown-menu");
-  	dropdown.classList.toggle("show");
-  }
 </script>
 	
 </html>

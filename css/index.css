@@ -651,14 +651,6 @@
 
     #moreResults {
       display: none;
-      font-size: 90%;
-      background-color: #ffffff;
-      color: white;
-      padding-left: 3px;
-      padding-right: 3px;
-      border: 2px solid #259;
-      border-top-width: 0;
-      cursor: pointer;
     }
 
     #moreResults:hover {
